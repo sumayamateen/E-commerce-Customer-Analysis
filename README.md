@@ -9,11 +9,18 @@
 
 ---
 
-##  Project Overview  
-This project demonstrates a **comprehensive data analysis workflow** on e-commerce transaction data, covering the **entire analytics pipeline** — from data cleaning to statistical analysis, visualization, predictive modeling, and SQL-based exploration in **Google Sheets**.  
+##  Project Overview 
+E-commerce customer behavior analysis covering data cleaning, statistical modeling, 
+and SQL exploration in spreadsheets. Identified peak sales patterns and market 
+concentration for business optimization.
 
-The goal was to uncover actionable insights into **customer purchasing behavior**, **sales trends**, and **market opportunities**.
+---
 
+**Key Insights:**
+- 95% revenue concentration in UK market
+- Peak sales hours: 11 AM - 12 PM  
+- Weak negative price-quantity correlation
+- Top product: "Assorted Colour Bird Ornament"
 ---
 
 ##  Excel Workbook Breakdown  
@@ -69,7 +76,7 @@ The goal was to uncover actionable insights into **customer purchasing behavior*
 - **Top Product:** “ASSORTED COLOUR BIRD ORNAMENT” (~\$1,160 revenue)  
 - **Customer Distribution:** 87% UK-based, 13% international  
 
-Visuals <img width="867" height="526" alt="image" src="https://github.com/user-attachments/assets/77f814d5-2be2-4bb3-88a3-303b54008330" />
+Sales Visualization <img width="867" height="526" alt="image" src="https://github.com/user-attachments/assets/77f814d5-2be2-4bb3-88a3-303b54008330" />
 
 ---
 
@@ -84,19 +91,17 @@ Indicates a **weak negative correlation**, supporting the **demand curve princip
 
 ---
 
-## Key Business Insights  
+## Key Business Insights
 
-### **Strengths**
-- Strong UK market presence and consistent customer engagement  
-- Clear **peak-hour sales patterns** for operational optimization  
-- High-performing **home & kitchen categories**  
-- Well-defined customer purchasing trends  
+### Strengths
+- **95% UK Market Dominance** - Strong home market presence
+- **Clear Peak Hours** - 11 AM-12 PM for targeted marketing
+- **Product Leadership** - Home & kitchen categories driving revenue
 
-### **Opportunities**
-- **Geographic Expansion:** Grow presence in France, Germany, and other European markets  
-- **Time-Based Marketing:** Focus promotions during **11 AM – 12 PM** peak window  
-- **Product Diversification:** Expand top-performing categories  
-- **Customer Segmentation:** Tailor offers for **domestic vs international** audiences  
+### Growth Opportunities  
+- **International Expansion** - France & Germany markets
+- **Time-Based Promotions** - Capitalize on peak sales hours
+- **Customer Segmentation** - Domestic vs international strategies
 
 ---
 
@@ -116,20 +121,14 @@ Executed SQL-like queries using **Google Sheets QUERY function** for data explor
 
 ---
 
-## Technical Implementation  
+## Technical Implementation
 
-### **Data Cleaning Steps**
-- Removed duplicates and invalid transactions  
-- Filtered cancellations, refunds, and postage charges  
-- Converted dates and engineered new columns (Revenue, Time)  
-
-### **Analytical Techniques**
-- **Descriptive Statistics:** Mean, median, and spread metrics  
-- **Correlation Analysis:** Numerical relationship exploration  
-- **Visual Analytics:** Pivot charts and sales distribution plots  
-- **Predictive Modeling:** Linear regression for price–quantity dynamics  
-
----
+### Data Pipeline
+1. **Data Cleaning** - Remove duplicates, filter invalid transactions
+2. **Feature Engineering** - Revenue calculations, time binning
+3. **Statistical Analysis** - Correlation, regression modeling
+4. **SQL Exploration** - Google Sheets QUERY function
+5. **Visualization** - Pivot charts, trend analysis
 
 ## Recommendations
 
