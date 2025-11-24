@@ -16,7 +16,7 @@ concentration for business optimization.
 
 ---
 
-**Key Insights:**
+## Key Insights:
 - 95% revenue concentration in UK market
 - Peak sales hours: 11 AM - 12 PM  
 - Weak negative price-quantity correlation
