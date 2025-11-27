@@ -38,6 +38,7 @@ Focused on **data cleaning, statistical modeling, visual insights, and revenue o
 *Peak sales hours and geographic revenue distribution*
 
 
+
 ## Statistical & Visual Analysis
 | Metric | Value | Insight |
 |--------|-------|---------|
