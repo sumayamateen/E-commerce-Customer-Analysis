@@ -33,8 +33,11 @@ Focused on **data cleaning, statistical modeling, visual insights, and revenue o
 **Outcome:** Clean, analysis-ready dataset for insights and modeling  
 
 ---
+
+
 ## Sales Visualization
 <img width="867" height="526" alt="Peak Hour Sales Analysis" src="https://github.com/user-attachments/assets/77f814d5-2be2-4bb3-88a3-303b54008330" />
+
 *Peak sales hours and geographic revenue distribution*
 
 
