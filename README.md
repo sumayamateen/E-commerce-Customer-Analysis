@@ -16,6 +16,18 @@ Focused on **data cleaning, statistical modeling, visual insights, and revenue o
 
 ---
 
+## Business Problems Solved
+
+This e-commerce analysis addresses critical challenges:
+
+- **Marketing Optimization:** Where and when to allocate ad spend
+- **Product Strategy:** Which items to feature and stock 
+- **Pricing Decisions:** Understanding price sensitivity for revenue optimization
+- **International Expansion:** Data-driven guidance on market prioritization
+- **Operational Efficiency:** Staffing and resource planning based on sales patterns
+
+---
+
 ## Key Insights
 - **Revenue Concentration:** 95% from UK market  
 - **Peak Sales Hour:** 11 AM – 12 PM  
