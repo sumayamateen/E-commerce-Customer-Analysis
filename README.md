@@ -33,9 +33,8 @@ Focused on **data cleaning, statistical modeling, visual insights, and revenue o
 **Outcome:** Clean, analysis-ready dataset for insights and modeling  
 
 ---
-
-**Sales Visualization:**  
-<img width="867" height="526" alt="Peak Hour Sales" src="https://github.com/user-attachments/assets/77f814d5-2be2-4bb3-88a3-303b54008330" />
+## Sales Visualization
+<img width="867" height="526" alt="Peak Hour Sales Analysis" src="https://github.com/user-attachments/assets/77f814d5-2be2-4bb3-88a3-303b54008330" />
 *Peak sales hours and geographic revenue distribution*
 
 
@@ -79,7 +78,7 @@ Used **QUERY function** to analyze patterns:
 - `ORDER BY` & `LIMIT` → Top-performing products  
 - Aggregations: `SUM()`, `AVG()`, `MAX()`, `MIN()`  
 
-**[View SQL Workbook →](https://docs.google.com/spreadsheets/d/18q1ex-GEzD1l5qjpdhAf7B6X1F7EaQyAJ4ZtaEzPN5A/edit?usp=sharing)**
+**[View SQL Queries →](https://docs.google.com/spreadsheets/d/18q1ex-GEzD1l5qjpdhAf7B6X1F7EaQyAJ4ZtaEzPN5A/edit?usp=sharing)**
 
 ---
 
