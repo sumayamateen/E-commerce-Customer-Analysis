@@ -1,5 +1,4 @@
 # E-commerce Customer Analysis
-
 ![Excel](https://img.shields.io/badge/Microsoft_Excel-Data_Analysis-217346)
 ![Google_Sheets](https://img.shields.io/badge/Google_Sheets-SQL_Queries-34A853)
 ![Statistics](https://img.shields.io/badge/Statistics-Correlation_Analysis-orange)
@@ -9,152 +8,105 @@
 
 ---
 
-##  Project Overview 
-E-commerce customer behavior analysis covering data cleaning, statistical modeling, 
-and SQL exploration in spreadsheets. Identified peak sales patterns and market 
-concentration for business optimization.
+## Project Overview
+Analysis of **E-commerce customer behavior** using Excel and Google Sheets with SQL-like queries.  
+Focused on **data cleaning, statistical modeling, visual insights, and revenue optimization**.
+
+**Dataset:** Transactions including Invoice, Product, Quantity, Price, Customer, Country  
 
 ---
 
-## Key Insights:
-- 95% revenue concentration in UK market
-- Peak sales hours: 11 AM - 12 PM  
-- Weak negative price-quantity correlation
-- Top product: "Assorted Colour Bird Ornament"
----
-
-##  Excel Workbook Breakdown  
-
-### **1. Customer Data (Raw)**  
-**Purpose:** Initial dataset containing unprocessed transactional data.  
-**Key Columns:** Invoice, StockCode, Description, Quantity, InvoiceDate, Price, Customer ID, Country  
-
-**Data Issues Identified:**
-- Duplicate records  
-- Cancelled orders (Invoices with ‘C’ prefix)  
-- Missing customer IDs and descriptions  
-- Postage/refund transactions  
-- Unformatted Excel date serials  
+## Key Insights
+- **Revenue Concentration:** 95% from UK market  
+- **Peak Sales Hour:** 11 AM – 12 PM  
+- **Top Product:** "Assorted Colour Bird Ornament" (~\$1,160 revenue)  
+- **Price-Quantity Relationship:** Weak negative correlation (-0.139)  
 
 ---
 
-### **2. Clean Data**  
-**Purpose:** Transformed dataset ready for analysis.  
+## Data Cleaning & Preparation
+**Operations:**
+- Removed duplicates, cancelled orders, postage/refund transactions  
+- Converted Excel date serials to readable datetime  
+- Created calculated columns: **Revenue**, **Time (hour bins)**  
 
-**Cleaning Operations:**
-- Removed duplicates and cancelled orders  
-- Filtered out postage, refunds, and zero-value transactions  
-- Converted Excel date serials → readable datetime  
-- Created calculated columns: **Revenue** and **Time (hour bins)**  
-
-**Final Dataset:** 45 valid transactions  
+**Outcome:** Clean, analysis-ready dataset for insights and modeling  
 
 ---
 
-### **3. Exploring Data Numerically**  
-**Purpose:** Statistical exploration and relationship analysis.  
+**Sales Visualization:**  
+<img width="867" height="526" alt="Peak Hour Sales" src="https://github.com/user-attachments/assets/77f814d5-2be2-4bb3-88a3-303b54008330" />
+*Peak sales hours and geographic revenue distribution*
 
+
+## Statistical & Visual Analysis
 | Metric | Value | Insight |
-|--------|--------|----------|
-| **Total Price** | \$116.85 | Total revenue from clean transactions |
-| **Average Price** | \$3.20 | Average item cost |
-| **Median Price** | \$2.60 | Consistent price distribution |
-| **Price Range** | \$0.55 – \$12.75 | Healthy product diversity |
+|--------|-------|---------|
+| Total Revenue | \$116.85 | From clean transactions |
+| Avg Price | \$3.20 | Consistent pricing |
+| Price Range | \$0.55 – \$12.75 | Product diversity |
 
-**Correlation Analysis:**
-- Price ↔ Quantity: **-0.139** (weak negative relationship)  
-- Invoice Date ↔ Price: **0.108** (very weak positive relationship)
-
----
-
-### **4. Exploring Data Visually**  
-**Purpose:** Visual analysis using Excel pivot charts and aggregated summaries.  
-
-**Key Insights:**
-- **Peak Hour:** 11 AM – 12 PM (highest daily sales)  
-- **Top Market:** United Kingdom (≈95% revenue share)  
-- **Top Product:** “ASSORTED COLOUR BIRD ORNAMENT” (~\$1,160 revenue)  
-- **Customer Distribution:** 87% UK-based, 13% international  
-
-Sales Visualization <img width="867" height="526" alt="image" src="https://github.com/user-attachments/assets/77f814d5-2be2-4bb3-88a3-303b54008330" />
+**Peak Hours & Market:**
+- **Hour:** 11 AM – 12 PM  
+- **Market Share:** 87% UK, 13% international
 
 ---
 
-### **5. Model Data (Linear Regression)**  
-**Objective:** Examine the price–quantity relationship to understand demand patterns.  
-
-**Regression Formula:**
-Price = -0.0029 × Quantity + 3.31
-
-**Interpretation:**  
-Indicates a **weak negative correlation**, supporting the **demand curve principle** — higher quantity tends to associate with slightly lower prices.
+## Regression Analysis
+**Objective:** Examine Price → Quantity relationship  
+**Formula:** Price = -0.0029 × Quantity + 3.31  
+**Interpretation:** Weak negative correlation confirms slight price drop at higher quantities
 
 ---
 
-## Key Business Insights
+## Business Insights & Recommendations
+**Strengths**
+- Dominant UK market (95% revenue)  
+- Clear peak hours for targeted campaigns  
+- High-performing products in home décor & kitchen  
 
-### Strengths
-- **95% UK Market Dominance** - Strong home market presence
-- **Clear Peak Hours** - 11 AM-12 PM for targeted marketing
-- **Product Leadership** - Home & kitchen categories driving revenue
-
-### Growth Opportunities  
-- **International Expansion** - France & Germany markets
-- **Time-Based Promotions** - Capitalize on peak sales hours
-- **Customer Segmentation** - Domestic vs international strategies
+**Opportunities**
+- Expand into France & Germany markets  
+- Time-based promotions during peak hours  
+- Customer segmentation strategies (Domestic vs International)  
 
 ---
 
-## SQL Queries (in Google Sheets)
+## SQL Exploration in Google Sheets
+Used **QUERY function** to analyze patterns:  
+- `SELECT` & `WHERE` → Filter by product, country, or date  
+- `GROUP BY` → Aggregate revenue by country/product  
+- `ORDER BY` & `LIMIT` → Top-performing products  
+- Aggregations: `SUM()`, `AVG()`, `MAX()`, `MIN()`  
 
-Executed SQL-like queries using **Google Sheets QUERY function** for data exploration:
-
-| Query Type | Purpose |
-|-------------|----------|
-| `SELECT ... WHERE` | Filter transactions by product, country, or date |
-| `ORDER BY` & `LIMIT` | Sort and extract top-performing products |
-| `GROUP BY` | Aggregate sales by country or product |
-| `AVG()`, `SUM()`, `MAX()`, `MIN()` | Calculate key performance metrics |
-| Conditional expressions | Analyze filtered patterns and KPIs |
-
-**[View Google Sheets SQL Workbook →](https://docs.google.com/spreadsheets/d/18q1ex-GEzD1l5qjpdhAf7B6X1F7EaQyAJ4ZtaEzPN5A/edit?usp=sharing)**
+**[View SQL Workbook →](https://docs.google.com/spreadsheets/d/18q1ex-GEzD1l5qjpdhAf7B6X1F7EaQyAJ4ZtaEzPN5A/edit?usp=sharing)**
 
 ---
 
 ## Technical Implementation
-
-### Data Pipeline
-1. **Data Cleaning** - Remove duplicates, filter invalid transactions
-2. **Feature Engineering** - Revenue calculations, time binning
-3. **Statistical Analysis** - Correlation, regression modeling
-4. **SQL Exploration** - Google Sheets QUERY function
-5. **Visualization** - Pivot charts, trend analysis
-
-## Recommendations
-
-1. **Expand International Markets:** Target France and Germany for regional growth  
-2. **Leverage Peak Hours:** Optimize ads and discounts between **11 AM – 12 PM**  
-3. **Product Strategy:** Double down on high-margin home décor and kitchen products  
-4. **Customer Segmentation:** Develop tailored retention programs for domestic vs international clients  
+1. **Data Cleaning** – Remove duplicates, cancelled orders, invalid transactions  
+2. **Feature Engineering** – Revenue calculation, time binning  
+3. **Statistical Analysis** – Correlation & regression modeling  
+4. **SQL Exploration** – Google Sheets QUERY for insights  
+5. **Visualization** – Pivot tables, charts, and peak-hour trends  
 
 ---
 
 ## Files Included
+- `1_Cleaning_&_Exploring.xlsx` – Full Excel analysis workflow  
+- `2_Extracting_Data_with_SQL` – Google Sheets SQL queries  
 
-- [1_Cleaning_&_Exploring.xlsx](1_Cleaning_&_Exploring.xlsx) — Main Excel workbook with the full analysis pipeline
-- [2_Extracting_Data_with_SQL](2_Extracting_Data_with_SQL) — Google Sheets SQL queries
-
-
-## Tools & Techniques  
-
-- **Microsoft Excel:** Data Cleaning • Pivot Tables • Charts • Descriptive Stats  
-- **Google Sheets:** SQL-like Queries (QUERY function)  
-- **Statistical Methods:** Correlation • Regression • Hypothesis-based Analysis  
-- **Visualization:** Aggregation charts • Peak-hour sales trend plots
 ---
 
-## Project Context  
+## Tools & Skills
+- **Excel:** Cleaning, Pivot Tables, Charts, Descriptive Stats  
+- **Google Sheets:** SQL-like queries (QUERY function)  
+- **Stats & Modeling:** Correlation, Linear Regression  
+- **Visualization:** Aggregation charts, trend plots  
 
-**Course:** Data Analysis with Spreadsheets and SQL  
+---
+
+## Project Context
+**Course:** Data Analysis with Spreadsheets & SQL  
 **Program:** Meta Data Analyst with GenAI Professional Certificate  
-**Focus:** Applying spreadsheet-based analytics and SQL techniques for business intelligence  
+**Objective:** Apply spreadsheet analytics & SQL techniques to deliver actionable business insights
